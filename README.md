@@ -1,5 +1,3 @@
-## Desafio Técnico: Integrando Gemini ao Twenty CRM 🚀
-
 Olá, futuro membro do nosso time!
 
 Estamos muito felizes em te ter nesta etapa do processo seletivo. Preparamos um desafio empolgante para você demonstrar suas habilidades e criatividade. O objetivo é integrar a inteligência artificial do Gemini ao Twenty CRM, criando uma nova aba de chat inteligente.
@@ -17,7 +15,7 @@ Estamos muito felizes em te ter nesta etapa do processo seletivo. Preparamos um 
     * Consulte a documentação para configurar o ambiente de desenvolvimento local:
         * [https://twenty.com/developers/local-setup](https://twenty.com/developers/local-setup)
         * [https://twenty.com/developers](https://twenty.com/developers)
-3.  **Estrure o funil:**
+3.  **Estruture o funil:**
     * Configurar a aba de oportunidades para representar o nosso funil.
     * As etapas do nosso funil são as seguintes: qualificação, contato realizado, agendamento, negociação, contrato.
     * Crie oportunidades (relação entre lead e organização) fakes (porem realistas) para melhor consulta dos dados mais tarde. 
@@ -81,3 +79,8 @@ Priorizamos os seguintes aspectos, em ordem de importância:
 * Estamos à disposição para esclarecer dúvidas e fornecer suporte durante o desafio.
 
 Boa sorte! Estamos ansiosos para ver sua solução criativa e inovadora. 🚀
+
+
+### Rascunho da tela
+![Sem título-2024-11-05-0950](https://github.com/user-attachments/assets/76f79cc4-462a-4e47-aa3c-f9fd6dc37ad2)
+
