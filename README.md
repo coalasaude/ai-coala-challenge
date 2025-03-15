@@ -17,6 +17,10 @@ Estamos muito felizes em te ter nesta etapa do processo seletivo. Preparamos um 
     * Consulte a documentação para configurar o ambiente de desenvolvimento local:
         * [https://twenty.com/developers/local-setup](https://twenty.com/developers/local-setup)
         * [https://twenty.com/developers](https://twenty.com/developers)
+3.  **Estrure o funil:**
+    * Configurar a aba de oportunidades para representar o nosso funil.
+    * As etapas do nosso funil são as seguintes: qualificação, contato realizado, agendamento, negociação, contrato.
+    * Crie oportunidades (relação entre lead e organização) fakes (porem realistas) para melhor consulta dos dados mais tarde. 
 3.  **Criar uma nova aba no CRM:**
     * Desenvolver uma nova aba dentro do Twenty CRM.
     * Esta aba será um chat interativo com a IA Gemini.
@@ -24,8 +28,14 @@ Estamos muito felizes em te ter nesta etapa do processo seletivo. Preparamos um 
     * Utilizar a API do Gemini para conectar a IA ao chat.
     * Obter a chave da API gratuitamente em: [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
 5.  **Implementar funcionalidades de consulta:**
-    * Permitir que o usuário faça perguntas à IA sobre o CRM.
+    * Permitir que o usuário faça perguntas à IA sobre o funil.
     * A IA deve ser capaz de fornecer informações sobre leads, seu status no funil, organização à qual pertencem e outras informações relevantes do CRM.
+    * Exemplos de perguntas podem ser as seguintes:
+       * Me traga informações sobre o lead Vinicius Possato
+       * A qual instituição Vinicius Possato está?
+       * Qual a quantidade de oportunidades em cada etapa do funil?
+       * Qual o valor da oportunidade da instituição Escolinha Raio de sol?
+       * Qual a soma dos valores das opotunidades em contrato?
 6.  **Implementar RAG (Retrieval Augmented Generation):**
     * Implemente RAG para refinar a busca de informações do CRM.
 
@@ -50,7 +60,7 @@ Priorizamos os seguintes aspectos, em ordem de importância:
 
 ## Como entregar o desafio?
 
-1.  Abra um pull request (PR) para este repositorio contem o projeto base do Twenty crm.
+1.  Abra um pull request (PR) para este repositorio aonde este pr deve conter o projeto base do Twenty CRM.
 1.  Desenvolva a nova aba de chat com Gemini no PR.
 3.  O Gemini deve responder se baseando em dados real time do CRM.
 4.  Entre em contato conosco sinalizando que terminou o projeto.
