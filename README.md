@@ -15,6 +15,7 @@ Estamos muito felizes em te ter nesta etapa do processo seletivo. Preparamos um 
     * Consulte a documentação para configurar o ambiente de desenvolvimento local:
         * [https://twenty.com/developers/local-setup](https://twenty.com/developers/local-setup)
         * [https://twenty.com/developers](https://twenty.com/developers)
+        * Atenção este projeto apenas roda no Chrome, em outros navegadores ele não consegue ser iniciado.
 3.  **Estruture o funil:**
     * Configurar a aba de oportunidades para representar o nosso funil.
     * As etapas do nosso funil são as seguintes: qualificação, contato realizado, agendamento, negociação, contrato.
