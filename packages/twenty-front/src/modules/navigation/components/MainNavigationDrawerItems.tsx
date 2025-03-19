@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { useRecoilState, useSetRecoilState } from 'recoil';
-import { IconSearch, IconSettings } from 'twenty-ui';
+import { IconSearch, IconSettings, IconMessage } from 'twenty-ui';
 
 import { useCommandMenu } from '@/command-menu/hooks/useCommandMenu';
 import { CurrentWorkspaceMemberFavoritesFolders } from '@/favorites/components/CurrentWorkspaceMemberFavoritesFolders';
@@ -18,6 +18,7 @@ import { ScrollWrapper } from '@/ui/utilities/scroll/components/ScrollWrapper';
 import styled from '@emotion/styled';
 import { useLingui } from '@lingui/react/macro';
 import { getSettingsPath } from '~/utils/navigation/getSettingsPath';
+import { AppPath } from '@/types/AppPath';
 
 const StyledMainSection = styled(NavigationDrawerSection)`
   min-height: fit-content;
@@ -62,6 +63,16 @@ export const MainNavigationDrawerItems = () => {
               setNavigationMemorizedUrl(location.pathname + location.search);
             }}
             Icon={IconSettings}
+          />
+          <NavigationDrawerItem
+            label={t`Gemini Chat`}
+            to={AppPath.GeminiChat}
+            onClick={() => {
+              setNavigationDrawerExpandedMemorized(isNavigationDrawerExpanded);
+              setIsNavigationDrawerExpanded(true);
+              setNavigationMemorizedUrl(location.pathname + location.search);
+            }}
+            Icon={IconMessage}
           />
         </StyledMainSection>
       )}

@@ -18,7 +18,7 @@ export enum AppPath {
   Index = '/',
   TasksPage = '/objects/tasks',
   OpportunitiesPage = '/objects/opportunities',
-
+  GeminiChat = '/gemini-chat',
   RecordIndexPage = '/objects/:objectNamePlural',
   RecordShowPage = '/object/:objectNameSingular/:objectRecordId',
 

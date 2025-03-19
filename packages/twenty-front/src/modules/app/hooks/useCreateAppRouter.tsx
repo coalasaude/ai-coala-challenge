@@ -3,6 +3,7 @@ import { SettingsRoutes } from '@/app/components/SettingsRoutes';
 
 import { VerifyEffect } from '@/auth/components/VerifyEffect';
 import { VerifyEmailEffect } from '@/auth/components/VerifyEmailEffect';
+import { GeminiChatPage } from '@/gemini-chat/components/GeminiChatPage';
 import indexAppPath from '@/navigation/utils/indexAppPath';
 import { AppPath } from '@/types/AppPath';
 import { BlankLayout } from '@/ui/layout/page/components/BlankLayout';
@@ -55,6 +56,7 @@ export const useCreateAppRouter = (
           <Route path={indexAppPath.getIndexAppPath()} element={<></>} />
           <Route path={AppPath.RecordIndexPage} element={<RecordIndexPage />} />
           <Route path={AppPath.RecordShowPage} element={<RecordShowPage />} />
+          <Route path={AppPath.GeminiChat} element={<GeminiChatPage />} />
           <Route
             path={AppPath.SettingsCatchAll}
             element={
