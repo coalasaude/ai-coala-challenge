@@ -3,7 +3,6 @@ import { SettingsRoutes } from '@/app/components/SettingsRoutes';
 
 import { VerifyEffect } from '@/auth/components/VerifyEffect';
 import { VerifyEmailEffect } from '@/auth/components/VerifyEmailEffect';
-import { GeminiChatPage } from '@/gemini-chat/components/GeminiChatPage';
 import indexAppPath from '@/navigation/utils/indexAppPath';
 import { AppPath } from '@/types/AppPath';
 import { BlankLayout } from '@/ui/layout/page/components/BlankLayout';
@@ -16,6 +15,7 @@ import {
 import { Authorize } from '~/pages/auth/Authorize';
 import { PasswordReset } from '~/pages/auth/PasswordReset';
 import { SignInUp } from '~/pages/auth/SignInUp';
+import { GeminiChatPage } from '~/pages/gemini-chat/GeminiChatPage';
 import { NotFound } from '~/pages/not-found/NotFound';
 import { RecordIndexPage } from '~/pages/object-record/RecordIndexPage';
 import { RecordShowPage } from '~/pages/object-record/RecordShowPage';
