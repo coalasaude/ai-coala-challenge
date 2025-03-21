@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
 from langchain_core.runnables.config import RunnableConfig
@@ -10,12 +11,21 @@ from graphs.main_graph import main_graph
 
 load_dotenv(override=True)
 
-app = FastAPI()
-
 
 class GraphInput(BaseModel):
     query: str
     parameters: Optional[RunnableConfig] = None
+
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.post("/invoke")
@@ -40,4 +50,5 @@ async def invoke(graph_input: GraphInput):
             ],
         }
     except Exception as e:
+        print(e)
         raise HTTPException(status_code=500, detail=f"Graph execution failed: {str(e)}")
