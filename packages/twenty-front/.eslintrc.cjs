@@ -32,6 +32,8 @@ module.exports = {
       },
       rules: {
         'project-structure/folder-structure': 'error',
+        '@nx/workspace-no-state-useref': 'off',
+        'react/jsx-props-no-spreading': 'off',
         /* 
         Uncomment this rule when we have a way to work on 
         'lingui/no-unlocalized-strings': [
