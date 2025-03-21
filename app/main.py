@@ -50,5 +50,4 @@ async def invoke(graph_input: GraphInput):
             ],
         }
     except Exception as e:
-        print(e)
         raise HTTPException(status_code=500, detail=f"Graph execution failed: {str(e)}")
