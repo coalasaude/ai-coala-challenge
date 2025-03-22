@@ -7,11 +7,11 @@ from apis.twenty_api import TwentyApi
 def get_opportunities_tool():
     """Retorna as oportunidades do Twenty CRM.
 
-    Essa ferramenta é utilizada para retornar as oportunidades disponiveis no funil de vendas do Twenty CRM.
+    Essa ferramenta é utilizada para retornar todas as oportunidades disponiveis no funil de vendas do Twenty CRM.
     Essa ferramenta nao precisa de nenhum argumento.
     """
     twenty_api = TwentyApi()
-    opportunities = twenty_api.get_opportunities()
+    opportunities = twenty_api.make_request("GET", "/opportunities", "opportunities")
 
     return {"opportunities": opportunities}
 
@@ -19,7 +19,7 @@ def get_opportunities_tool():
 class GetOpportunitiesTool(BaseTool):
     name: str = "retorna_oportunidades_twenty_crm"
     description: str = (
-        "Retorna as oportunidades disponiveis no funil de vendas do Twenty CRM"
+        "Retorna todas as oportunidades disponiveis no funil de vendas do Twenty CRM"
     )
 
     def _to_args_and_kwargs(
