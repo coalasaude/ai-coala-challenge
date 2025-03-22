@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from contextlib import asynccontextmanager
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
@@ -7,6 +8,8 @@ from dotenv import load_dotenv
 from uuid import uuid4
 
 from graphs.main_graph import main_graph
+from graphs.main_graph.tools.vectorstore_retriever import retriever_tool_builder
+from apis.twenty_api import TwentyApi
 
 
 load_dotenv(override=True)
@@ -17,7 +20,20 @@ class GraphInput(BaseModel):
     parameters: Optional[RunnableConfig] = None
 
 
-app = FastAPI()
+class TestRouteInput(BaseModel):
+    method: str
+    endpoint: str
+    entity: str
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # STARTUP
+    _ = retriever_tool_builder()  # preload retriever/model
+    yield
+
+
+app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -51,3 +67,10 @@ async def invoke(graph_input: GraphInput):
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Graph execution failed: {str(e)}")
+
+
+@app.post("/test_route")
+async def test_route(data: TestRouteInput):
+    twenty_api = TwentyApi()
+    response = twenty_api.make_request(data.method, data.endpoint, data.entity)
+    return response

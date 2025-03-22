@@ -7,7 +7,7 @@ from graphs.main_graph.tools import tools
 
 
 def assistant_node(state: State):
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.0)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.3)
     llm_with_tools = llm.bind_tools(tools)
     messages = state["messages"]
     return {
