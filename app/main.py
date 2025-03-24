@@ -9,7 +9,6 @@ from uuid import uuid4
 
 from graphs.main_graph import main_graph
 from graphs.main_graph.tools.vectorstore_retriever import retriever_tool_builder
-from apis.twenty_api import TwentyApi
 
 
 load_dotenv(override=True)
@@ -57,20 +56,11 @@ async def invoke(graph_input: GraphInput):
             parameters,
             stream_mode="values",
         )
+        message = result["messages"][-1]
+
         return {
             "thread_id": parameters["configurable"]["thread_id"],
-            "messages": [
-                {"type": message.type, "content": message.content}
-                for message in result["messages"]
-                if message.type in ("ai", "human") and message.content
-            ],
+            "message": {"type": message.type, "content": message.content},
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Graph execution failed: {str(e)}")
-
-
-@app.post("/test_route")
-async def test_route(data: TestRouteInput):
-    twenty_api = TwentyApi()
-    response = twenty_api.make_request(data.method, data.endpoint, data.entity)
-    return response
