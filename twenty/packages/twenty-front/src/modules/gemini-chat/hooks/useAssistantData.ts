@@ -9,7 +9,7 @@ import { useCallback } from 'react';
 
 export type FetchAssistantResponse = {
   thread_id: string;
-  messages: ChatMessages[];
+  message: ChatMessages;
 };
 
 export const useAssistantData = () => {
