@@ -20,6 +20,7 @@ const StyledBody = styled.div`
   flex-direction: column;
   justify-content: end;
   position: relative;
+  height: 100%;
 `;
 
 export const GeminiChatPage = () => {
