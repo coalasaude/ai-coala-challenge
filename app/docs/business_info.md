@@ -1,8 +1,3 @@
-# Dados da Empresa
-
-Nome: Coala Saúde Healthtech S.A
-Industria: Saúde
-
 # Estrutura do Twenty CRM
 
 - Empresas (Companies)
@@ -16,13 +11,13 @@ O Fluxo do CRM funciona da seguinte maneira:
 
 - Oportunidades ou leads são dispostas numa estrutura de fúnil, podendo ser visualizados em forma de quadro kambam.
 - Oportunidades são ligadas a uma empresa que por sua vez possui uma pessoa como responsável da oportunidade.
-- As etapas do fúnil para a empresa Coala são respectivamente nesta ordem: Qualificação, Contato Realizado, Agendamento, Negociação, Contrato.
+- As etapas do fúnil para a empresa Coala são respectivamente nesta ordem: Qualificação (QUALIFICACAO), Contato Realizado (CONTATO_REALIZADO), Agendamento (AGENDAMENTO), Negociaçã (NEGOCIACAO), Contrato (CONTRATO).
   Onde a oportunidade caminha por esses cinco passos conforme a negociação com a empresa avança até o ponto
   da assinatura do contrato.
 
 # Detalhamento das entidades do Twenty CRM
 
-## Empresa
+Empresa / Instituição
 
 - Nome (Name)
 - Nome do Domínio (Domain Name)
@@ -33,7 +28,7 @@ O Fluxo do CRM funciona da seguinte maneira:
 - Linkedin
 - Endereço (Address)
 
-## Pessoas
+Pessoas / Contatos
 
 - Nome (Name)
 - E-mails (Emails)
@@ -45,30 +40,12 @@ O Fluxo do CRM funciona da seguinte maneira:
 - Cargo (Job Title)
 - Linkedin
 
-## Oportunidades
+Oportunidades / Leads
 
 - Nome (Name)
 - Valor (Amount)
+- Etapa (Stage)
 - Criado Por (Created By)
 - Data de Fechamento (Close Date)
 - Empresa (Company)
 - Ponto de Contato (Point of Contact)
-
-## Tarefas
-
-- Titulo (Title)
-- Status
-- Relações (Relations)
-- Criado Por (Created By)
-- Data de Vencimento (Due Date)
-- Responsável (Assignee)
-- Corpo (Body)
-- Data de Criação (Creation Date)
-
-## Notas
-
-- Titulo (Title)
-- Relações (Relations)
-- Corpo (Body)
-- Criado Por (Created By)
-- Data de Criação (Creation Date)
