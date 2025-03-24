@@ -1,162 +1,115 @@
+## Instruções para rodar o projeto.
 
-<br>
-<p align="center">
-  <a href="https://www.twenty.com">
-    <img src="./packages/twenty-website/public/images/core/logo.svg" width="100px" alt="Twenty logo" />
-  </a>
-</p>
+1. **Rodando o Twenty CRM**
 
-<h2 align="center" >The #1 Open-Source CRM </h3>
+   - Rode o comando para subir o docker compose apartir da raiz do projeto, o processo é um pouco demorado, aconselho acompanhar pelo logs do container.
+   - Caso tenha alguma instancia do postgres rodando na port 5432, ou uma instância do redis na porta 6379 é aconselhável para-las.
 
-<p align="center"><a href="https://twenty.com">🌐 Website</a> · <a href="https://twenty.com/developers">📚 Documentation</a> · <a href="https://github.com/orgs/twentyhq/projects/1"><img src="./packages/twenty-website/public/images/readme/planner-icon.svg" width="12" height="12"/> Roadmap </a> · <a href="https://discord.gg/cx5n4Jzs57"><img src="./packages/twenty-website/public/images/readme/discord-icon.svg" width="12" height="12"/> Discord</a> · <a href="https://www.figma.com/file/xt8O9mFeLl46C5InWwoMrN/Twenty"><img src="./packages/twenty-website/public/images/readme/figma-icon.png"  width="12" height="12"/>  Figma</a><p>
-<br />
+```
+    docker compose up -d
+```
 
+2. **Acessando o CRM e gerando a API Keys**
+   - Acesse o sistema atráves do endereço http://localhost:3001
+   - Acesse a aba Settings.
+   - Habilite a opção Advanced, ultima opção do menu.
+   - Acesse a opção APIs > Create API key
+   - De um nome para a chave, pode ser Coala, o nome aqui não importa muito.
+   - Copiar a API key gerada
+   - Rodar o comando substituindo {api_key} pela chave gerada. Esse comando irá rodar outro compose que o processo também é um pouco demorado.
 
-<p align="center">
-  <a href="https://www.twenty.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/preview-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/preview-light.png">
-      <img src="./packages/twenty-docs/static/img/preview-light.png" alt="Companies view" />
-    </picture>
-  </a>
-</p>
+```
+    chmod +x run_ai_server.sh && ./run_ai_server.sh {api_key}
+```
 
-<br>
+- Após o o término do processo já é possivel fazer as consultas atráves da aba Gemini Chat.
+- Qualquer dúvida estou a disposição.
 
-# Installation 
+##
 
-See:  
-🚀 [Self-hosting](https://twenty.com/developers/section/self-hosting)  
-🖥️ [Local Setup](https://twenty.com/developers/local-setup)  
+Olá, futuro membro do nosso time!
 
-# Does the world need another CRM?
+Estamos muito felizes em te ter nesta etapa do processo seletivo. Preparamos um desafio empolgante para você demonstrar suas habilidades e criatividade. O objetivo é integrar a inteligência artificial do Gemini ao Twenty CRM, criando uma nova aba de chat inteligente.
 
-We built Twenty for three reasons:
+**Aceita o desafio?** 😉
 
-**CRMs are too expensive, and users are trapped.** Companies use locked-in customer data to hike prices. It shouldn't be that way.
+## Projeto: Chat Inteligente com Gemini no Twenty CRM
 
-**A fresh start is required to build a better experience.** We can learn from past mistakes and craft a cohesive experience inspired by new UX patterns from tools like Notion, Airtable or Linear.
+**O que você precisa fazer?**
 
-**We believe in Open-source and community.** Hundreds of developers are already building Twenty together. Once we have plugin capabilities, a whole ecosystem will grow around it.
+1.  **Clonar este repo e copiar o projeto:**
+    - Clone este repositorio, abra um novo PR que deverá conter os arquivos do projeto Twenty CRM.
+    - [https://github.com/twentyhq/twenty](https://github.com/twentyhq/twenty)
+2.  **Configurar o ambiente:**
+    - Consulte a documentação para configurar o ambiente de desenvolvimento local:
+      - [https://twenty.com/developers/local-setup](https://twenty.com/developers/local-setup)
+      - [https://twenty.com/developers](https://twenty.com/developers)
+      - Atenção este projeto apenas roda no Chrome, em outros navegadores ele não consegue ser iniciado.
+3.  **Estruture o funil:**
+    - Configurar a aba de oportunidades para representar o nosso funil.
+    - As etapas do nosso funil são as seguintes: qualificação, contato realizado, agendamento, negociação, contrato.
+    - Crie oportunidades (relação entre lead e organização) fakes (porem realistas) para melhor consulta dos dados mais tarde.
+4.  **Criar uma nova aba no CRM:**
+    - Desenvolver uma nova aba dentro do Twenty CRM.
+    - Esta aba será um chat interativo com a IA Gemini.
+5.  **Integrar o Gemini:**
+    - Utilizar a API do Gemini para conectar a IA ao chat.
+    - Obter a chave da API gratuitamente em: [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+6.  **Implementar funcionalidades de consulta:**
+    - Permitir que o usuário faça perguntas à IA sobre o funil.
+    - A IA deve ser capaz de fornecer informações sobre leads, seu status no funil, organização à qual pertencem e outras informações relevantes do CRM.
+    - Exemplos de perguntas podem ser as seguintes:
+      - Me traga informações sobre o lead Vinicius Possato
+      - A qual instituição Vinicius Possato está?
+      - Qual a quantidade de oportunidades em cada etapa do funil?
+      - Qual o valor da oportunidade da instituição Escolinha Raio de sol?
+      - Qual a soma dos valores das opotunidades em contrato?
+7.  **Implementar RAG (Retrieval Augmented Generation):**
+    - Implemente RAG para refinar a busca de informações do CRM.
 
-<br>
+## O que vamos avaliar?
 
-# What You Can Do With Twenty
-We're currently developing Twenty's beta version.  
+Priorizamos os seguintes aspectos, em ordem de importância:
 
-Please feel free to flag any specific needs you have by creating an issue.   
+1.  **Prompt e integração com o Gemini:**
+    - Qualidade dos prompts utilizados para interagir com a API do Gemini.
+    - Eficiência e robustez da integração com a API.
+    - Como a IA responde a diferentes tipos de perguntas sobre o CRM.
+2.  **Habilidades com RAG:**
+    - Eficácia do RAG na organização e recuperação de dados do CRM.
+    - Como o RAG melhora a precisão e relevância das respostas da IA.
+3.  **Capacidade de seguir a arquitetura do projeto:**
+    - Aderência às convenções e padrões de arquitetura do Twenty CRM.
+4.  **Criatividade e autonomia na resolução de problemas:**
+    - Capacidade de adaptar e criar soluções inovadoras para desafios e dificuldades técnicas.
+    - **Commits granulares são esperados.**
+5.  **Habilidades de design e front-end:**
+    - Qualidade do design da interface do chat e experiência do usuário.
 
-Below are a few features we have implemented to date:
+## Como entregar o desafio?
 
-+ [Add, filter, sort, edit, and track customers](#add-filter-sort-edit-and-track-customers)
-+ [Create one or several opportunities for each company](#create-one-or-several-opportunities-for-each-company)
-+ [See rich notes tasks displayed in a timeline](#see-rich-notes-tasks-displayed-in-a-timeline)
-+ [Create tasks on records](#create-tasks-on-records)
-+ [Navigate quickly through the app using keyboard shortcuts and search](#navigate-quickly-through-the-app-using-keyboard-shortcuts-and-search)
+1.  Abra um pull request (PR) para este repositorio aonde este pr deve conter o projeto base do Twenty CRM.
+1.  Desenvolva a nova aba de chat com Gemini no PR.
+1.  O Gemini deve responder se baseando em dados real time do CRM.
+1.  Entre em contato conosco sinalizando que terminou o projeto.
+1.  Apresente o que foi feito para nossa equipe.
 
+## Recursos úteis
 
-## Add, filter, sort, edit, and track customers:
+- Repositório do Twenty CRM: [https://github.com/twentyhq/twenty](https://github.com/twentyhq/twenty)
+- Documentação do Twenty CRM:
+  - [https://twenty.com/developers/local-setup](https://twenty.com/developers/local-setup)
+  - [https://twenty.com/developers](https://twenty.com/developers)
+- Obter chave da API do Gemini: [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
 
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/index-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/index-light.png">
-      <img src="./packages/twenty-docs/static/img/visualise-customer-light.png" alt="Companies view" />
-    </picture>
-</p>
+## Observações
 
-## Create one or several opportunities for each company:
+- Sinta-se à vontade para utilizar as bibliotecas e ferramentas que preferir.
+- Documente seu código de forma clara e concisa.
+- Estamos à disposição para esclarecer dúvidas e fornecer suporte durante o desafio.
 
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/kanban-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/kanban-light.png">
-      <img src="./packages/twenty-docs/static/img/follow-your-deals-light.png" alt="Companies view" />
-    </picture>
-</p>
+Boa sorte! Estamos ansiosos para ver sua solução criativa e inovadora. 🚀
 
-## Track deals effortlessly with the email integration:
+### Rascunho da tela
 
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/emails-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/emails-light.png">
-      <img src="./packages/twenty-docs/static/img/rich-notes-light.png" alt="Companies view" />
-    </picture>
-</p>
-
-## Tailor your data model to meet business needs:
-
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/data-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/data-light.png">
-      <img src="./packages/twenty-docs/static/img/rich-notes-light.png" alt="Companies view" />
-    </picture>
-</p>
-
-## See rich notes displayed in a timeline:
-
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/notes-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/notes-light.png">
-      <img src="./packages/twenty-docs/static/img/rich-notes-light.png" alt="Companies view" />
-    </picture>
-</p>
-
-## Create tasks on records
-
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/tasks-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/tasks-light.png">
-      <img src="./packages/twenty-docs/static/img/create-tasks-light.png" alt="Companies view" />
-    </picture>
-</p>
-
-## Navigate quickly through the app using keyboard shortcuts and search:
-
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/keyboard-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/keyboard-light.png">
-      <img src="./packages/twenty-docs/static/img/shortcut-navigation-light.png" alt="Companies view" />
-    </picture>
-</p>
-
-## Connect your CRM to all your tools through our APIs and Webhooks.
-
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/api-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/v0.12.0/packages/twenty-docs/static/img/api-light.png">
-      <img src="./packages/twenty-docs/static/img/shortcut-navigation-light.png" alt="Companies view" />
-    </picture>
-</p>
-
-
-<br>
-
-# Stack
-- [TypeScript](https://www.typescriptlang.org/)
-- [Nx](https://nx.dev/)
-- [NestJS](https://nestjs.com/), with [BullMQ](https://bullmq.io/), [PostgreSQL](https://www.postgresql.org/), [Redis](https://redis.io/)
-- [React](https://reactjs.org/), with [Recoil](https://recoiljs.org/) and [Emotion](https://emotion.sh/)
-- [Greptile](https://greptile.com) for code reviews.
-- [Lingui](https://lingui.dev/) and [Crowdin](https://twenty.crowdin.com/twenty) for translations.
-
-
-# Join the Community
-
-- Star the repo
-- Subscribe to releases (watch -> custom -> releases)
-- Follow us on [Twitter](https://twitter.com/twentycrm) or [LinkedIn](https://www.linkedin.com/company/twenty/) 
-- Join our [Discord](https://discord.gg/cx5n4Jzs57)
-- Improve translations on [Crowdin](https://twenty.crowdin.com/twenty) 
-- [Contributions](https://github.com/twentyhq/twenty/contribute) are, of course, most welcome! 
-
-
-
-
+![Sem título-2024-11-05-0950](https://github.com/user-attachments/assets/76f79cc4-462a-4e47-aa3c-f9fd6dc37ad2)
