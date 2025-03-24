@@ -1,0 +1,34 @@
+{
+  "name": "twenty-emails",
+  "version": "0.44.0-canary",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "AGPL-3.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "npx vite build"
+  },
+  "dependencies": {
+    "@lingui/core": "^5.1.2",
+    "@lingui/react": "^5.1.2",
+    "twenty-shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@lingui/cli": "^5.1.2",
+    "@lingui/swc-plugin": "^5.1.0",
+    "@lingui/vite-plugin": "^5.1.2"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": "^18.17.1",
+    "npm": "please-use-yarn",
+    "yarn": "^4.0.2"
+  }
+}
