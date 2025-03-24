@@ -55,6 +55,6 @@ def retriever_tool_builder():
     retriever_tool = create_retriever_tool(
         retriever=vectorstore_retriever,
         name="retriever_tool",
-        description="Retorna informacoes sobre como a estrutura do Twenty CRM da empresa Coala funciona.",
+        description="Busca e Retorna informacoes sobre como a estrutura do Twenty CRM da empresa Coala funciona.",
     )
     return retriever_tool

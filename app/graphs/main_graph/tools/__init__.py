@@ -11,10 +11,11 @@ from graphs.main_graph.tools.get_opportunities_by_person_first_name import (
 from graphs.main_graph.tools.get_opportunities_by_person_last_name import (
     get_opportunities_by_person_last_name_tool,
 )
-from graphs.main_graph.tools.vectorstore_retriever import retriever_tool_builder
+from graphs.main_graph.tools.companies import GetCompaniesTool, get_company_by_name_tool
 from langchain_core.tools import Tool
 
-tools = [
+
+opportunities_tools = [
     GetOpportunitiesTool(),
     Tool(
         name="get_opportunities_by_company_name",
@@ -48,5 +49,11 @@ tools = [
             "Recebe como argumentos o sobrenome do contato."
         ),
     ),
-    retriever_tool_builder(),
 ]
+
+companies_tools = [
+    GetCompaniesTool(),
+    get_company_by_name_tool,
+]
+
+tools = opportunities_tools + companies_tools

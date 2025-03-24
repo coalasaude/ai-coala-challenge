@@ -10,8 +10,13 @@ def assistant_node(state: State):
     llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.3)
     llm_with_tools = llm.bind_tools(tools)
     messages = state["messages"]
+    context = state["context"]
+
+    formatted_assistant_prompt = assistant_prompt.format(context=context)
     return {
         "messages": [
-            llm_with_tools.invoke([SystemMessage(content=assistant_prompt)] + messages)
+            llm_with_tools.invoke(
+                [SystemMessage(content=formatted_assistant_prompt)] + messages
+            )
         ]
     }
