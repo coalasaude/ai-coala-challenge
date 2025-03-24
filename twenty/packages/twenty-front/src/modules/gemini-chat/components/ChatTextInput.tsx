@@ -87,7 +87,7 @@ export const ChatTextInput = () => {
     if (!!response === true) {
       setChat((oldChat) => ({
         threadId: response.thread_id,
-        messages: [...oldChat.messages, ...response.messages],
+        messages: [...oldChat.messages, response.message],
         query: '',
       }));
     } else {
@@ -97,6 +97,12 @@ export const ChatTextInput = () => {
       }));
     }
     setLoading(false);
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter' && !loading && !!chat.query) {
+      handleSubmit();
+    }
   };
 
   return (
@@ -112,6 +118,7 @@ export const ChatTextInput = () => {
             query: event.currentTarget.value,
           }))
         }
+        onKeyDown={(event) => handleKeyDown(event)}
       />
       <StyledButton
         type="button"
