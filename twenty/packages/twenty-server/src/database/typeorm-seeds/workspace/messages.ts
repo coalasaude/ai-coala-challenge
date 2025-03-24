@@ -47,7 +47,7 @@ export const seedMessage = async (
         updatedAt: new Date(),
         deletedAt: null,
         receivedAt: new Date(),
-        text: 'Good Morning,\n I am writing to inquire about information. Could you please provide me with details regarding this topic? \n Your assistance in this matter would be greatly appreciated. Thank you in advance for your prompt response. \n Best regards,Tim',
+        text: 'Good Morning,\n I am writing to inquire about information. Could you please provide me with details regarding this topic? \n Your assistance in this matter would be greatly appreciated. Thank you in advance for your prompt response. \n Best regards,Vinícius',
         subject: 'Inquiry Regarding Topic',
         messageThreadId: DEV_SEED_MESSAGE_THREAD_IDS.MESSAGE_THREAD_2,
         headerMessageId: '8f804a9a-04c8-4f24-93f2-764948e95014',

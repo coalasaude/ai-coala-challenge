@@ -5,7 +5,7 @@ const SERVER_URL = `http://localhost:${APP_PORT}`;
 const client = request(SERVER_URL);
 
 const auth = {
-  email: 'tim@apple.dev',
+  email: 'vinicius.possato@coalasaude.com.br',
   password: 'Applecar2025',
 };
 

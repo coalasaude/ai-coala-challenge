@@ -44,7 +44,7 @@ export const seedMessageChannel = async (
         isContactAutoCreationEnabled: true,
         type: 'email',
         connectedAccountId: DEV_SEED_CONNECTED_ACCOUNT_IDS.TIM,
-        handle: 'tim@apple.dev',
+        handle: 'vinicius.possato@coalasaude.com.br',
         isSyncEnabled: false,
         visibility: MessageChannelVisibility.SHARE_EVERYTHING,
         syncStage: MessageChannelSyncStage.FULL_MESSAGE_LIST_FETCH_PENDING,

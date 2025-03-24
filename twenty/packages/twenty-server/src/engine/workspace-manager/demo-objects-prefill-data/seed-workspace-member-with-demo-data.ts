@@ -47,11 +47,11 @@ export const seedWorkspaceMemberWithDemoData = async (
       },
       {
         id: DEMO_SEED_WORKSPACE_MEMBER_IDS.TIM,
-        nameFirstName: 'Tim',
+        nameFirstName: 'Vinícius',
         nameLastName: 'Apple',
         locale: SOURCE_LOCALE,
         colorScheme: 'Light',
-        userEmail: 'tim@apple.dev',
+        userEmail: 'vinicius.possato@coalasaude.com.br',
         userId: DEMO_SEED_USER_IDS.TIM,
       },
     ])

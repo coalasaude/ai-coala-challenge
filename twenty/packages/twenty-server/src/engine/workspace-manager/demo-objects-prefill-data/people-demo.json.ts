@@ -406,7 +406,7 @@ export const peopleDemo = [
   },
   {
     firstName: 'John',
-    lastName: 'Cook',
+    lastName: 'Possato',
     city: 'Carmenchester',
     email: 'john.cook@example.com',
     avatarUrl:
@@ -627,7 +627,7 @@ export const peopleDemo = [
   },
   {
     firstName: 'Lisa',
-    lastName: 'Cook',
+    lastName: 'Possato',
     city: 'Rachelmouth',
     email: 'lisa.cook@example.com',
     avatarUrl:
@@ -835,7 +835,7 @@ export const peopleDemo = [
   },
   {
     firstName: 'Morgan',
-    lastName: 'Cook',
+    lastName: 'Possato',
     city: 'Estradaborough',
     email: 'morgan.cook@example.com',
     avatarUrl:
@@ -6749,7 +6749,7 @@ export const peopleDemo = [
     createdByName: 'Hugo I',
   },
   {
-    firstName: 'Tim',
+    firstName: 'Vinícius',
     lastName: 'Torres',
     city: 'Jenniferview',
     email: 'tim.torres@example.com',
@@ -8427,7 +8427,7 @@ export const peopleDemo = [
   },
   {
     firstName: 'Tyler',
-    lastName: 'Cook',
+    lastName: 'Possato',
     city: 'Bowershaven',
     email: 'tyler.cook@example.com',
     avatarUrl:
@@ -8622,7 +8622,7 @@ export const peopleDemo = [
   },
   {
     firstName: 'Michelle',
-    lastName: 'Cook',
+    lastName: 'Possato',
     city: 'Teresamouth',
     email: 'michelle.cook@example.com',
     avatarUrl:
@@ -15057,7 +15057,7 @@ export const peopleDemo = [
   },
   {
     firstName: 'Cynthia',
-    lastName: 'Cook',
+    lastName: 'Possato',
     city: 'South Lisa',
     email: 'cynthia.cook@example.com',
     avatarUrl:
@@ -15251,7 +15251,7 @@ export const peopleDemo = [
     createdByName: 'Hugo I',
   },
   {
-    firstName: 'Tim',
+    firstName: 'Vinícius',
     lastName: 'Levine',
     city: 'Bentonland',
     email: 'tim.levine@example.com',

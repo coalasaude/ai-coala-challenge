@@ -1,6 +1,6 @@
+import styled from '@emotion/styled';
 import { useLingui } from '@lingui/react/macro';
 import { useEffect, useState } from 'react';
-import styled from '@emotion/styled';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { useDebouncedCallback } from 'use-debounce';
 
@@ -115,14 +115,14 @@ export const NameFields = ({
         label={t`First Name`}
         value={firstName}
         onChange={setFirstName}
-        placeholder="Tim"
+        placeholder="Vinícius"
         fullWidth
       />
       <TextInput
         label={t`Last Name`}
         value={lastName}
         onChange={setLastName}
-        placeholder="Cook"
+        placeholder="Possato"
         fullWidth
       />
     </StyledComboInputContainer>

@@ -51,7 +51,7 @@ export class EnvironmentVariables {
   @EnvironmentVariablesMetadata({
     group: EnvironmentVariablesGroup.Other,
     description:
-      'Prefills tim@apple.dev in the login form, used in local development for quicker sign-in',
+      'Prefills vinicius.possato@coalasaude.com.br in the login form, used in local development for quicker sign-in',
   })
   @CastToBoolean()
   @IsOptional()

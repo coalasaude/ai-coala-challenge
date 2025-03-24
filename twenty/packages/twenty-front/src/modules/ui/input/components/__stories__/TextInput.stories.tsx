@@ -21,7 +21,7 @@ const meta: Meta<typeof TextInput> = {
   title: 'UI/Input/TextInput',
   component: TextInput,
   decorators: [ComponentDecorator],
-  args: { placeholder: 'Tim' },
+  args: { placeholder: 'Vinícius' },
   render: Render,
 };
 
@@ -31,9 +31,9 @@ type Story = StoryObj<typeof TextInput>;
 export const Default: Story = {};
 
 export const Filled: Story = {
-  args: { value: 'Tim' },
+  args: { value: 'Vinícius' },
 };
 
 export const Disabled: Story = {
-  args: { disabled: true, value: 'Tim' },
+  args: { disabled: true, value: 'Vinícius' },
 };

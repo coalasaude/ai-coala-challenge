@@ -31,7 +31,7 @@ export const mockedCalendarEvents: CalendarEvent[] = [
         handle: 'tapple',
         isOrganizer: false,
         responseStatus: 'ACCEPTED',
-        displayName: 'Tim Apple',
+        displayName: 'Vinícius Apple',
       },
     ],
     __typename: 'CalendarEvent',

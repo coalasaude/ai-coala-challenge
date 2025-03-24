@@ -41,7 +41,7 @@ export const seedConnectedAccount = async (
         refreshToken: 'exampleRefreshToken',
         accessToken: 'exampleAccessToken',
         provider: 'google',
-        handle: 'tim@apple.dev',
+        handle: 'vinicius.possato@coalasaude.com.br',
       },
       {
         id: DEV_SEED_CONNECTED_ACCOUNT_IDS.JONY,

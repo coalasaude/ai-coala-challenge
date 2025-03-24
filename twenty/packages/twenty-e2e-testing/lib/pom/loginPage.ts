@@ -55,8 +55,8 @@ export class LoginPage {
     this.uploadImageButton = page.getByRole('button', { name: 'Upload' });
     this.deleteImageButton = page.getByRole('button', { name: 'Remove' });
     this.workspaceNameField = page.getByPlaceholder('Apple');
-    this.firstNameField = page.getByPlaceholder('Tim');
-    this.lastNameField = page.getByPlaceholder('Cook');
+    this.firstNameField = page.getByPlaceholder('Vinícius');
+    this.lastNameField = page.getByPlaceholder('Possato');
     this.syncEverythingWithGoogleRadio = page.locator(
       'input[value="SHARE_EVERYTHING"]',
     );
@@ -68,7 +68,9 @@ export class LoginPage {
       name: 'Sync with Google',
     });
     this.noSyncButton = page.getByText('Continue without sync');
-    this.inviteLinkField1 = page.getByPlaceholder('tim@apple.dev');
+    this.inviteLinkField1 = page.getByPlaceholder(
+      'vinicius.possato@coalasaude.com.br',
+    );
     this.inviteLinkField2 = page.getByPlaceholder('craig@apple.dev');
     this.inviteLinkField3 = page.getByPlaceholder('mike@apple.dev');
     this.copyInviteLink = page.getByRole('button', {

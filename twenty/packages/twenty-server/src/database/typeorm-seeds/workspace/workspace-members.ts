@@ -1,11 +1,11 @@
 import { EntityManager } from 'typeorm';
 
+import { DEV_SEED_USER_IDS } from 'src/database/typeorm-seeds/core/users';
 import {
-  SEED_APPLE_WORKSPACE_ID,
   SEED_ACME_WORKSPACE_ID,
+  SEED_APPLE_WORKSPACE_ID,
 } from 'src/database/typeorm-seeds/core/workspaces';
 import { WorkspaceMember } from 'src/engine/core-modules/user/dtos/workspace-member.dto';
-import { DEV_SEED_USER_IDS } from 'src/database/typeorm-seeds/core/users';
 
 const tableName = 'workspaceMember';
 
@@ -36,11 +36,11 @@ export const seedWorkspaceMember = async (
     workspaceMembers = [
       {
         id: DEV_SEED_WORKSPACE_MEMBER_IDS.TIM,
-        nameFirstName: 'Tim',
-        nameLastName: 'Apple',
+        nameFirstName: 'Vinícius',
+        nameLastName: 'Possato',
         locale: 'en',
         colorScheme: 'Light',
-        userEmail: 'tim@apple.dev',
+        userEmail: 'vinicius.possato@coalasaude.com.br',
         userId: DEV_SEED_USER_IDS.TIM,
       },
       {
@@ -68,11 +68,11 @@ export const seedWorkspaceMember = async (
     workspaceMembers = [
       {
         id: DEV_SEED_WORKSPACE_MEMBER_IDS.TIM,
-        nameFirstName: 'Tim',
+        nameFirstName: 'Vinícius',
         nameLastName: 'Apple',
         locale: 'en',
         colorScheme: 'Light',
-        userEmail: 'tim@apple.dev',
+        userEmail: 'vinicius.possato@coalasaude.com.br',
         userId: DEV_SEED_USER_IDS.TIM,
       },
     ];

@@ -57,7 +57,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -107,7 +107,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -145,7 +145,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
         },
       },
@@ -189,7 +189,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -239,7 +239,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -277,7 +277,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
         },
       },
@@ -321,7 +321,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -371,7 +371,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -422,7 +422,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -472,7 +472,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -523,7 +523,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -573,7 +573,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -624,7 +624,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -674,7 +674,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -725,7 +725,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -775,7 +775,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -826,7 +826,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -876,7 +876,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -927,7 +927,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -977,7 +977,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -1028,7 +1028,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -1078,7 +1078,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -1129,7 +1129,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -1179,7 +1179,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -1230,7 +1230,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -1280,7 +1280,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -1331,7 +1331,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -1381,7 +1381,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -1432,7 +1432,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -1482,7 +1482,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -1533,7 +1533,7 @@ export const peopleQueryResult = {
             __typename: 'Actor',
             source: 'MANUAL',
             workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-            name: 'Tim Apple',
+            name: 'Vinícius Apple',
           },
           xLink: {
             __typename: 'Links',
@@ -1583,7 +1583,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',
@@ -1684,7 +1684,7 @@ export const peopleQueryResult = {
               __typename: 'Actor',
               source: 'MANUAL',
               workspaceMemberId: '20202020-0687-4c41-b707-ed1bfca972a7',
-              name: 'Tim Apple',
+              name: 'Vinícius Apple',
             },
             xLink: {
               __typename: 'Links',

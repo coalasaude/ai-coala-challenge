@@ -81,7 +81,7 @@ export const opportunitiesByStageView = (
           objectMetadataStandardIdToIdMap[STANDARD_OBJECT_IDS.opportunity]
             .fields[OPPORTUNITY_STANDARD_FIELD_IDS.stage],
         isVisible: true,
-        fieldValue: 'NEW',
+        fieldValue: 'QUALIFICACAO',
         position: 0,
       },
       {
@@ -89,7 +89,7 @@ export const opportunitiesByStageView = (
           objectMetadataStandardIdToIdMap[STANDARD_OBJECT_IDS.opportunity]
             .fields[OPPORTUNITY_STANDARD_FIELD_IDS.stage],
         isVisible: true,
-        fieldValue: 'SCREENING',
+        fieldValue: 'CONTATO_REALIZADO',
         position: 1,
       },
       {
@@ -97,7 +97,7 @@ export const opportunitiesByStageView = (
           objectMetadataStandardIdToIdMap[STANDARD_OBJECT_IDS.opportunity]
             .fields[OPPORTUNITY_STANDARD_FIELD_IDS.stage],
         isVisible: true,
-        fieldValue: 'MEETING',
+        fieldValue: 'AGENDAMENTO',
         position: 2,
       },
       {
@@ -105,7 +105,7 @@ export const opportunitiesByStageView = (
           objectMetadataStandardIdToIdMap[STANDARD_OBJECT_IDS.opportunity]
             .fields[OPPORTUNITY_STANDARD_FIELD_IDS.stage],
         isVisible: true,
-        fieldValue: 'PROPOSAL',
+        fieldValue: 'NEGOCIACAO',
         position: 3,
       },
       {
@@ -113,7 +113,7 @@ export const opportunitiesByStageView = (
           objectMetadataStandardIdToIdMap[STANDARD_OBJECT_IDS.opportunity]
             .fields[OPPORTUNITY_STANDARD_FIELD_IDS.stage],
         isVisible: true,
-        fieldValue: 'CUSTOMER',
+        fieldValue: 'CONTRATO',
         position: 4,
       },
     ],

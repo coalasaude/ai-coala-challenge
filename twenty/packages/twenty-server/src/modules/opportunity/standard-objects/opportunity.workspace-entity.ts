@@ -92,18 +92,28 @@ export class OpportunityWorkspaceEntity extends BaseWorkspaceEntity {
     description: msg`Opportunity stage`,
     icon: 'IconProgressCheck',
     options: [
-      { value: 'NEW', label: 'New', position: 0, color: 'red' },
-      { value: 'SCREENING', label: 'Screening', position: 1, color: 'purple' },
-      { value: 'MEETING', label: 'Meeting', position: 2, color: 'sky' },
       {
-        value: 'PROPOSAL',
-        label: 'Proposal',
+        value: 'QUALIFICACAO',
+        label: 'Qualificação',
+        position: 0,
+        color: 'red',
+      },
+      {
+        value: 'CONTATO_REALIZADO',
+        label: 'Contato Realizado',
+        position: 1,
+        color: 'purple',
+      },
+      { value: 'AGENDAMENTO', label: 'Agendamento', position: 2, color: 'sky' },
+      {
+        value: 'NEGOCIACAO',
+        label: 'Negociação',
         position: 3,
         color: 'turquoise',
       },
-      { value: 'CUSTOMER', label: 'Customer', position: 4, color: 'yellow' },
+      { value: 'CONTRATO', label: 'Contrato', position: 4, color: 'yellow' },
     ],
-    defaultValue: "'NEW'",
+    defaultValue: "'QUALIFICACAO'",
   })
   @WorkspaceFieldIndex()
   stage: string;

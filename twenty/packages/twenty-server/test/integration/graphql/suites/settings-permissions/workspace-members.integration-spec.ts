@@ -71,7 +71,7 @@ describe('workspace members permissions', () => {
         recordId: DEV_SEED_WORKSPACE_MEMBER_IDS.TIM,
         data: {
           name: {
-            firstName: 'Not Tim',
+            firstName: 'Not Vinícius',
           },
         },
       });

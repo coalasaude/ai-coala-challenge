@@ -185,7 +185,7 @@ export const CreateProfile = () => {
                     setIsEditingMode(false);
                   }}
                   onChange={onChange}
-                  placeholder="Tim"
+                  placeholder="Vinícius"
                   error={error?.message}
                   fullWidth
                 />
@@ -207,7 +207,7 @@ export const CreateProfile = () => {
                     setIsEditingMode(false);
                   }}
                   onChange={onChange}
-                  placeholder="Cook"
+                  placeholder="Possato"
                   error={error?.message}
                   fullWidth
                 />

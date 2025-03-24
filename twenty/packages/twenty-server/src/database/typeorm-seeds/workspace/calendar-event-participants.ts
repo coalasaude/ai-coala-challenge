@@ -39,7 +39,7 @@ export const seedCalendarEventParticipants = async (
         id: 'e1ab9e1b-df6e-438e-a788-11c96dcecdd3',
         calendarEventId: '86083141-1c0e-494c-a1b6-85b1c6fefaa5',
         handle: 'tim@apple.com',
-        displayName: 'Tim Apple',
+        displayName: 'Vinícius Apple',
         isOrganizer: false,
         responseStatus: CalendarEventParticipantResponseStatus.ACCEPTED,
         personId: null,

@@ -44,9 +44,9 @@ export const seedUsers = async (
       },
       {
         id: DEMO_SEED_USER_IDS.TIM,
-        firstName: 'Tim',
+        firstName: 'Vinícius',
         lastName: 'Apple',
-        email: 'tim@apple.dev',
+        email: 'vinicius.possato@coalasaude.com.br',
         passwordHash:
           '$2b$10$66d.6DuQExxnrfI9rMqOg.U1XIYpagr6Lv05uoWLYbYmtK0HDIvS6', // Applecar2025
       },

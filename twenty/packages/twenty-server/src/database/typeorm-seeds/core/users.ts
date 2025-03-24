@@ -28,9 +28,9 @@ export const seedUsers = async (
     .values([
       {
         id: DEV_SEED_USER_IDS.TIM,
-        firstName: 'Tim',
-        lastName: 'Apple',
-        email: 'tim@apple.dev',
+        firstName: 'Vinícius',
+        lastName: 'Possato',
+        email: 'vinicius.possato@coalasaude.com.br',
         passwordHash:
           '$2b$10$66d.6DuQExxnrfI9rMqOg.U1XIYpagr6Lv05uoWLYbYmtK0HDIvS6', // Applecar2025
         canImpersonate: true,

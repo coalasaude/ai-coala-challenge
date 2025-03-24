@@ -17,7 +17,7 @@ export const mockedTimelineActivities: Array<TimelineActivity> = [
       locale: 'en',
       name: {
         __typename: 'FullName',
-        firstName: 'Tim',
+        firstName: 'Vinícius',
         lastName: 'Apple',
       },
       userEmail: 'tim@apple.com',
@@ -43,7 +43,7 @@ export const mockedTimelineActivities: Array<TimelineActivity> = [
       locale: 'en',
       name: {
         __typename: 'FullName',
-        firstName: 'Tim',
+        firstName: 'Vinícius',
         lastName: 'Apple',
       },
       userEmail: 'tim@apple.com',
@@ -69,7 +69,7 @@ export const mockedTimelineActivities: Array<TimelineActivity> = [
       locale: 'en',
       name: {
         __typename: 'FullName',
-        firstName: 'Tim',
+        firstName: 'Vinícius',
         lastName: 'Apple',
       },
       userEmail: 'tim@apple.com',
@@ -129,7 +129,7 @@ export const mockedTimelineActivities: Array<TimelineActivity> = [
       locale: 'en',
       name: {
         __typename: 'FullName',
-        firstName: 'Tim',
+        firstName: 'Vinícius',
         lastName: 'Apple',
       },
       userEmail: 'tim@apple.com',

@@ -42,9 +42,9 @@ export const seedWorkspaces = async ({
   const workspaces: Record<string, WorkspaceSeederFields> = {
     [SEED_APPLE_WORKSPACE_ID]: {
       id: SEED_APPLE_WORKSPACE_ID,
-      displayName: 'Apple',
-      subdomain: 'apple',
-      inviteHash: 'apple.dev-invite-hash',
+      displayName: 'Coala',
+      subdomain: 'coala',
+      inviteHash: 'coala.dev-invite-hash',
       logo: 'https://twentyhq.github.io/placeholder-images/workspaces/apple-logo.png',
       activationStatus: WorkspaceActivationStatus.ACTIVE,
       version: version,

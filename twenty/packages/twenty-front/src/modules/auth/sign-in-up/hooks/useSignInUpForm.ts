@@ -61,7 +61,7 @@ export const useSignInUpForm = () => {
     }
 
     if (isDeveloperDefaultSignInPrefilled === true) {
-      form.setValue('email', prefilledEmail ?? 'tim@apple.dev');
+      form.setValue('email', prefilledEmail ?? 'vinicius.possato@coalasaude.com.br');
       form.setValue('password', 'Applecar2025');
     }
   }, [

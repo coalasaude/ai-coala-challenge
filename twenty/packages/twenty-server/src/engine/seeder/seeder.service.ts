@@ -154,7 +154,7 @@ export class SeederService {
         position: index,
         createdBySource: 'MANUAL',
         createdByWorkspaceMemberId: DEV_SEED_WORKSPACE_MEMBER_IDS.TIM,
-        createdByName: 'Tim Apple',
+        createdByName: 'Vinícius Apple',
       }),
     );
 

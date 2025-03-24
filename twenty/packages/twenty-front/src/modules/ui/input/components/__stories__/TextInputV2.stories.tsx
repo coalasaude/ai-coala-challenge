@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { ComponentDecorator } from 'twenty-ui';
 
 import {
-  TextInputV2,
-  TextInputV2ComponentProps,
+    TextInputV2,
+    TextInputV2ComponentProps,
 } from '@/ui/input/components/TextInputV2';
 
 type RenderProps = TextInputV2ComponentProps;
@@ -24,7 +24,7 @@ const meta: Meta<typeof TextInputV2> = {
   title: 'UI/Input/TextInputV2',
   component: TextInputV2,
   decorators: [ComponentDecorator],
-  args: { placeholder: 'Tim' },
+  args: { placeholder: 'Vinícius' },
   render: Render,
 };
 
@@ -34,27 +34,27 @@ type Story = StoryObj<typeof TextInputV2>;
 export const Default: Story = {};
 
 export const Filled: Story = {
-  args: { value: 'Tim' },
+  args: { value: 'Vinícius' },
 };
 
 export const Disabled: Story = {
-  args: { disabled: true, value: 'Tim' },
+  args: { disabled: true, value: 'Vinícius' },
 };
 
 export const AutoGrow: Story = {
-  args: { autoGrow: true, value: 'Tim' },
+  args: { autoGrow: true, value: 'Vinícius' },
 };
 
 export const AutoGrowWithPlaceholder: Story = {
-  args: { autoGrow: true, placeholder: 'Tim' },
+  args: { autoGrow: true, placeholder: 'Vinícius' },
 };
 
 export const Small: Story = {
-  args: { sizeVariant: 'sm', value: 'Tim' },
+  args: { sizeVariant: 'sm', value: 'Vinícius' },
 };
 
 export const AutoGrowSmall: Story = {
-  args: { autoGrow: true, sizeVariant: 'sm', value: 'Tim' },
+  args: { autoGrow: true, sizeVariant: 'sm', value: 'Vinícius' },
 };
 
 export const WithLeftAdornment: Story = {

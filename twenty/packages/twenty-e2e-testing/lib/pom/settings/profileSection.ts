@@ -9,8 +9,8 @@ export class ProfileSection {
 
   constructor(public readonly page: Page) {
     this.page = page;
-    this.firstNameField = page.getByPlaceholder('Tim');
-    this.lastNameField = page.getByPlaceholder('Cook');
+    this.firstNameField = page.getByPlaceholder('Vinícius');
+    this.lastNameField = page.getByPlaceholder('Possato');
     this.emailField = page.getByRole('textbox').nth(2);
     this.changePasswordButton = page.getByRole('button', {
       name: 'Change Password',
