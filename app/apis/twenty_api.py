@@ -4,7 +4,7 @@ import requests
 
 class TwentyApi:
     def __init__(self):
-        self.base_url = "http://localhost:3000/rest"
+        self.base_url = "http://host.docker.internal:3000/rest"
         self.token = os.getenv("TWENTY_API_KEY")
 
     def get_opportunities(self):

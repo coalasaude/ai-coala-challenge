@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  app:
+    image: python:3.12.2
+    volumes:
+      - ./:/app
+    entrypoint: ["/app/entry_point.sh"]
+    env_file:
+      - .env_app
+    tty: true
+    stdin_open: true
+    container_name: ai_app
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  app-network:
+    driver: bridge

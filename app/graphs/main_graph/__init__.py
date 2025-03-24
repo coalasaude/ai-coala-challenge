@@ -36,7 +36,7 @@ main_graph_builder.add_conditional_edges(
     "assistant", route_tools_node, {"tools": "tools", END: END}
 )
 
-db_uri = os.getenv("PG_DATABASE_URL")
+db_uri = "postgres://postgres:postgres@host.docker.internal:5432/postgres"
 conn = Connection.connect(db_uri)
 checkpointer = PostgresSaver(conn)
 

@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  twenty:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./twenty:/app
+    env_file:
+      - .env_docker
+    tty: true
+    stdin_open: true
+    container_name: twenty
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+      - "3002:3002"
+    networks:
+      - app-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  app-network:
+    driver: bridge
